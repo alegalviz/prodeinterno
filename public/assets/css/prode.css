@@ -1,0 +1,418 @@
+/*
+    Prode core Style:
+    Estilos generales del prode.
+*/
+body {font-family: 'varela_roundregular', "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif}
+#wrap {margin-bottom: 60px;}
+.brasilfont {font-family: 'brasil2014bold';}
+.varela {font-family: 'varela_roundregular';}
+.top-celeste {
+    background-color:#76C4E4;
+    height:23px;
+    border:0;
+    border-color:transparent;
+    background-image: none;
+    border-radius: 0;
+    font-size:12px;
+    min-height: 23px;
+    padding: 0;
+    margin:0;
+    color: white;
+}
+.top-celeste li>a {max-height:23px; color: white; padding:2px 15px 0px 15px !important; border-right: 1px solid;margin-top:1px; margin-bottom: 1px; text-transform: uppercase;}
+.top-celeste li>a:hover, .top-celeste li>a:focus {background-color:transparent;background-position: 3px 4px;}
+
+.top-celeste .idioma {background-repeat: no-repeat; background-position:  3px 4px; padding-left: 25px !important; }
+
+.header-image {
+    background:url("../img/header.jpg") top right no-repeat;
+    height: 75px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #76C4E4;
+}
+h1 {
+    color:#00AAE7;
+    font-size: 40px;
+    font-family: 'brasil2014bold',Calibri,Helvetica, Arial, sans-serif;
+}
+h3 {
+    font-family: 'brasil2014bold',Calibri, "Helvetica Neue", "Arial", sans-serif;
+    color:#00AAE7;
+}
+.banner-login {padding-top: 7em;}
+.btn-primary {
+    background-image: -webkit-linear-gradient(top,#00AAE8 0,#0099D2 100%);
+    background-image: linear-gradient(to bottom,#00AAE8 0,#0099D2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00AAE8', endColorstr='#ff0099D2', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #00AAE8;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #0099D2;
+    background-position: 0 -15px;
+    border-color: #00AAE8;
+}
+.menu {margin-bottom: 10px;margin-top:10px;}
+.menu li a {text-transform: uppercase; color:#666;}
+.menu li a:hover {background: none transparent; }
+.menu li {background: url("../img/flechamenuderecha.png") no-repeat center left;  margin-right: 20px;}
+.menu li.active {background: url("../img/flechamenuabajo.png") no-repeat center left;padding-left: 8px;}
+.menu li.active a {color:#0088BF;}
+
+#descontando {padding-top: 10px; color:#00AAE8;font-size: 2em;text-align: right;}
+.faltapoco {font-size: 14px;}
+#descontando .dias {text-transform:lowercase;}
+
+.contenidocartelera {min-height: 700px;}
+#cartelera {margin-top:20px;position: relative;}
+#cartelera .row {
+    position: absolute;
+    background: #eee;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+}
+#cartelera .row {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.advertencia {padding:10px;margin-top:10px;margin-bottom:10px;}
+#cartelera .nombreuser {float: left;
+    width: 190px;
+    font-size: 20px;
+    padding-bottom: 33px;
+}
+#cartelera .imagenuser {float: left;
+    width: 56px;
+    margin-right: 10px;}
+#cartelera .rowcomentario {margin-bottom: 20px;min-height: 30px;}
+#cartelera .rowcomentario .imagenuser, #cartelera .rowcomentario .imagenuser img {width:30px;}
+#cartelera .rowcomentario .cuerpocomentario {color: #666;
+    font-size: 13px;}
+#cartelera .nombreusercomentando {
+    width: 100%;
+    color: #0088BF; font-size: 12px;}
+#cartelera .imagenuser, #cartelera .imagenuser img,
+#posiciones .imagenuser, #posiciones .imagenuser img {position:relative;width: 56px;}
+#cartelera .imagenuser img {border:1px solid #E6E6E6;}
+.comment-form {overflow: auto; margin-bottom:10px;}
+#cartelera .comment-form img, #cartelera  .comment-form .imagenuser {width: 26px;}
+#cajacomentario {color:#ccc; width: 85%;}
+#cajacomentario.clicked {color:#111;}
+.nuevopost {}
+
+#cartelera button.handlike {
+    background:none!important;
+    border:none;
+    padding:0!important;
+    float: left;
+}
+#cartelera .post {position: relative;}
+#cartelera .form-like {position: absolute;
+    width: 35px;
+    bottom: 0;
+    right: 0;}
+#cartelera .likes {float: left;padding-top:6px;padding-left: 5px;font-size: 12px; margin-right: 4px;}
+
+/*#signup .form-actions {margin-top:40px;}*/
+#signup .labelimagen {width: 100%;
+    margin-bottom: 15px;}
+
+
+/*rotador fechas*/
+.bx-wrapper {position: relative;}
+.slider li {display:table-cell;list-style-type: none;vertical-align: middle;padding-left: 10px;}
+.fechas a{background: #CCCCCC; color: #ffffff;padding-left: 10px;padding-right: 10px;font-size: 19px; width: 100px;height: 22px;display: block;text-align: center;}
+.bx-prev {
+    /* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    background: url("../img/flechafechasizquierda.png") no-repeat;
+    position: absolute;
+    top: 1px;
+    left: -13px;
+    width: 9px;
+}
+.bx-next {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    background: url("../img/flechafechasderecha.png") no-repeat;
+    position: absolute;
+    top: 1px;
+    right: -13px;
+    width: 9px;
+}
+.fechas a.active {background-color:#00AAE8;}
+
+.bandera.derecha, .bandera.derecha:hover {background-position: center right; padding-right: 25px;background-position-y: 8px;}
+.bandera.izquierda, .bandera.izquierda:hover {background-position:center left; padding-left: 25px;background-position-y: 8px;}
+
+#apuestas, #posiciones {margin-top:50px;position: relative;}
+#apuestas .partido { text-align:center;display: inline-block; display: table-cell;}
+
+#apuestas .equipo1, #apuestas .equipo2 {
+    font-size: 17px;
+    width: 112px;
+    max-width: 137px;
+    padding-top: 3px;
+}
+#apuestas .marcador2 {
+    position: absolute;
+    left: 56%;
+    top: 23px;
+}
+#apuestas .lugaryhora {padding-left:10px;}
+#apuestas .horapartido {margin-top:20px;background: url("../img/reloj.png") no-repeat top left; padding-left: 20px;color:#858585;font-size: 11px; margin-bottom:10px;}
+#apuestas .estadio {background: url("../img/marcador.png") no-repeat top left; padding-left: 20px;;color:#858585; font-size: 11px;}
+#apuestas .row {height: 81px;position: relative;}
+#apuestas .marcador1, #apuestas .marcador2 {background: url("../img/fondomarcador.jpg") no-repeat top center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;}
+#apuestas .marcador1,#apuestas .marcador2 {font-size: 20px;}
+#apuestas .marcador1 {position: absolute;left: 32%;
+    top: 23px;}
+
+#apuestas .equipo1 {position: absolute;left: 0;
+    top: 23px;text-align: right;}
+#apuestas .equipo2 {position: absolute;right: 0%;
+    top: 23px;text-align: left;}
+#apuestas .grupo {font-size: 17px;
+    color: #0088BF;
+    background: url("../img/redondogrupo.png") no-repeat top center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 16px;
+    height: 81px;
+    padding-top: 30px;
+    position: absolute;
+    left: 45%;
+    width: 44px;}
+#apuestas .popover-title {font-family: 'varela_roundregular', "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;}
+
+
+
+.editable-click, a.editable-click, a.editable-click:hover {
+    text-decoration: none;
+    border-bottom: dashed 1px #0088BF;
+}
+.editable-empty, .editable-empty:hover, .editable-empty:focus {
+    font-style: italic;
+    color: #0088BF;
+    /* border-bottom: none; */
+    text-decoration: none;
+}
+
+#posiciones th {background: #96D1EB;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;}
+#posiciones td {text-align: center;}
+#posiciones li {
+    list-style: none;
+    width: 100px;
+    padding: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+    height: 100px;
+}
+#posiciones tr {background: #F5F5F5;}
+
+#posiciones tr:nth-child(1) {background: #DBDBDB;}
+#posiciones tr:nth-child(2) {background: #E5E5E5;}
+#posiciones tr:nth-child(3) {background: #EEEEEE;}
+#posiciones tr:nth-child(4) {background: #F0F0F0;}
+#posiciones tr:nth-child(5) {background: #F3F3F3;}
+#posiciones tr:nth-child(6) {background: #F5F5F5;}
+
+#posiciones td:nth-child(2),#posiciones td:nth-child(3),#posiciones td:nth-child(4) {border-right: 1px solid #76C4E4;}
+#posiciones .numero {
+    background: url("../img/numero.png") no-repeat top center;
+    padding-top: 6px;
+    padding-bottom: 7px;
+}
+#posiciones .puntos {
+    padding-top: 6px;
+    padding-bottom: 7px;
+}
+
+#posiciones .imagenuser, #posiciones .imagenuser img {position:relative;width: 56px;}
+#posiciones .imagenuser img {border:1px solid #E6E6E6;}
+#posiciones .lugar {
+    background: url("../img/fondoposicionequipoprimero.png") no-repeat top left;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: #fff;
+    position: absolute;
+    top: 1px;
+    right: -19px;
+    width: 18px;
+    text-align: center;
+}
+
+#resultados {
+    margin-top: 50px;
+    position: relative;
+}
+#resultados th {background: #73C522;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;}
+#resultados tr {border-bottom: 1px solid #73C522;}
+#resultados .fecha {color: #0085BF;
+    text-align: center;
+    line-height: 160%;
+    padding-top: 10px;}
+#resultados .dia {font-size: 30px;}
+#resultados .mes {font-size: 20px;}
+#resultados .equipos {line-height: 200%;}
+#resultados .bandera.izquierda {background-position-y: 6px;}
+#resultados .marcador {text-align: center;font-size: 20px;}
+
+.banner-fixture {float: left;
+    width: 403px;
+    padding-left: 40px;
+    padding-top: 40px;}
+
+
+.login .copagrande {
+    background: url('../img/copa.png');
+    position: absolute;
+    top: -70px;
+    left: -270px;
+    height: 571px;
+    width: 308px;
+}
+.login .logoempresa {display: none;}
+.login .izquierda {padding-left:6em;}
+
+/*perfil*/
+.secundario {font-size: 12px;color:#666; font-weight: normal;}
+#perfil .rowcomentario.even, .rowpartido.even {
+    background-color:#FFFFFF;
+}
+
+#perfil .rowcomentario.odd, .rowpartido.odd {
+    background-color:#EEEEEE;
+}
+#perfil .rowcomentario {font-size: 12px;color: #666; padding: 10px;}
+#perfil #cajacomentario {width: 100%;}
+#perfil .rowcomentario .nombreusercomentando {color:#0086BF;}
+#perfil .fotoydatos {background: #EEEEEE;    padding: 20px;}
+#perfil .imagenuser, #perfil .imagenuser img {width: 105px;}
+#perfil .imagenuser img {border:1px solid #E6E6E6;}
+#perfil .imagenuser {float: left; margin-right: 10px;}
+#perfil .nombreuser {font-size: 16px;font-weight: bold;color:#666;margin-bottom: 15px;}
+#perfil .miembro {font-size: 11px; color:#76C4E4; }
+#perfil .miembro:after {content: ',';}
+#perfil .miembro:last-child:after {content: '';}
+.tablaapuestas {margin-top:10px;}
+.tablaapuestas .equipo {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 20px;
+    float: left;
+}
+.tablaapuestas .marcador {color:#0086BF; float: left;margin-left:10px;margin-right:10px;font-family: 'brasil2014bold', Calibri, "Helvetica Neue", "Arial", sans-serif;}
+.tablaapuestas .versus {color:#666;float: left;margin-left:10px;margin-right:10px;font-family: 'brasil2014bold', Calibri, "Helvetica Neue", "Arial", sans-serif;}
+.tablaapuestas .rowpartido {width:200px;}
+.tablaapuestas .fechaapuesta {margin-left:10px;margin-right:10px;color:#666;font-size: 11px; }
+.apuestasusuario h3 {margin-top:0; font-family: 'varela_roundregular', "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;}
+.tablaapuestas {width: 100%;}
+.tablaapuestas th {color:#666;font-size:12px;}
+
+#footer {background: #76C4E4; width: 100%; position: fixed; bottom: 0; height: 42px;}
+#footer .logosabcocos {
+    background: url("../img/flechaizquierdaazul.png") no-repeat top right;
+    float: right;
+    width: 253px;
+    height: 44px;
+    padding-top: 6px;
+    padding-left: 30px;
+}
+#footer .logosabcocos img {padding-right:3px;}
+
+.top-celeste .idioma {display:none;}
+
+
+
+
+/* banderas */
+.BRA, .BRA:hover {background:url('../img/banderas/brasil.gif') no-repeat;}
+.HRV, .HRV:hover {background:url('../img/banderas/croacia.gif') no-repeat;}
+.MEX, .MEX:hover {background:url('../img/banderas/mexico.gif') no-repeat;}
+.CMR, .CMR:hover {background:url('../img/banderas/camerun.gif') no-repeat;}
+.ESP, .ESP:hover {background:url('../img/banderas/espana.gif') no-repeat;}
+.NLD, .NLD:hover {background:url('../img/banderas/holanda.gif') no-repeat;}
+.CHL, .CHL:hover {background:url('../img/banderas/chile.gif') no-repeat;}
+.AUS, .AUS:hover {background:url('../img/banderas/australia.gif') no-repeat;}
+.COL, .COL:hover {background:url('../img/banderas/colombia.gif') no-repeat;}
+.GRC, .GRC:hover {background:url('../img/banderas/grecia.gif') no-repeat;}
+.CIV, .CIV:hover {background:url('../img/banderas/costamarfil.gif') no-repeat;}
+.JPN, .JPN:hover {background:url('../img/banderas/japon.gif') no-repeat;}
+.URY, .URY:hover {background:url('../img/banderas/uruguay.gif') no-repeat;}
+.CRC, .CRC:hover {background:url('../img/banderas/costarica.gif') no-repeat;}
+.ENG, .ENG:hover {background:url('../img/banderas/inglaterra.gif') no-repeat;}
+.ITA, .ITA:hover {background:url('../img/banderas/italia.gif') no-repeat;}
+.CHE, .CHE:hover {background:url('../img/banderas/suiza.gif') no-repeat;}
+.ECU, .ECU:hover {background:url('../img/banderas/ecuador.gif') no-repeat;}
+.FRA, .FRA:hover {background:url('../img/banderas/francia.gif') no-repeat;}
+.HND, .HND:hover {background:url('../img/banderas/honduras.gif') no-repeat;}
+.ARG, .ARG:hover {background:url('../img/banderas/argentina.gif') no-repeat;}
+.BIH, .BIH:hover {background:url('../img/banderas/bosnia.gif') no-repeat;}
+.IRN, .IRN:hover {background:url('../img/banderas/iran.gif') no-repeat;}
+.NGA, .NGA:hover {background:url('../img/banderas/nigeria.gif') no-repeat;}
+.DEU, .DEU:hover {background:url('../img/banderas/alemania.gif') no-repeat;}
+.PRT, .PRT:hover {background:url('../img/banderas/portugal.gif') no-repeat;}
+.GHA, .GHA:hover {background:url('../img/banderas/gana.gif') no-repeat;}
+.USA, .USA:hover {background:url('../img/banderas/eeuu.gif') no-repeat;}
+.BEL, .BEL:hover {background:url('../img/banderas/belgica.gif') no-repeat;}
+.DZA, .DZA:hover {background:url('../img/banderas/argelia.gif') no-repeat;}
+.RUS, .RUS:hover {background:url('../img/banderas/rusia.gif') no-repeat;}
+.KOR, .KOR:hover {background:url('../img/banderas/coreasur.gif') no-repeat;}
+
+@media (min-width: 992px) {
+    .nuevopost {
+        margin-bottom: 20px;
+        margin-right: 70px;
+        margin-top: 6px;
+    }
+    .volver {
+        margin-top: 5px;
+        width: auto;
+        position: absolute;
+        right: 5px;
+        z-index: 99;
+    }
+
+}
+@media (min-width: 1200px) {
+    #apuestas .equipo1, #apuestas .equipo2 {font-size: 18px; width: 137px; max-width: 137px;padding-top:3px;}
+    #apuestas .marcador2 {position: absolute;left: 57%;top: 23px;}
+    .nuevopost {
+        margin-top: 60px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    .volver {
+        margin-top: 5px;
+        width: auto;
+        position: absolute;
+        right: 122px;
+        z-index: 99;
+    }
+}
+
